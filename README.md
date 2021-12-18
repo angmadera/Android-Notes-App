@@ -21,14 +21,19 @@ Note list-entries contain the note title (bold), the last-save-time, and the fir
 
 The app title “Android Notes” ad the current number of notes is displayed in the title-bar.
 
+![Screenshot 2021-12-18 094342.png](https://github.com/angmadera/images/blob/main/Screenshot%202021-12-18%20094342.png?raw=true)
+
 ## Edit Activity
 The Edit Activity contains editable fields for the note title and note text. The last-save time automatically generated and saved when the note is saved.
+
 The note title is a single-line text field (EditText) where the user can enter or edit a title for the current note (no size limit).
 
 The note text is a multi-line text area (EditText) with no size limit. This has scrolling capability for when notes exceed the size of the activity.
 
 The Edit Activity allows the note title & text to be saved by either:
+
 a) Pressing the Save options-menu item. This will return the new note to the MainActivity, and then exit the Edit Activity. MainActivity adds the note to the MainActivity’s list of notes. Note that if no changes have been made to the current note, the Edit Activity simply exits.
+
 b) Pressing the Back arrow to exit the activity. This will first display a confirmation dialog where the user can opt to save the note (if changes have been made) before exiting the activity. If saved, the new note is returned to the MainActivity, and then exit the Edit Activity. MainActivity then adds the note to the MainActivity’s list of notes. Note that if no changes have been made to the current note, the Edit Activity simply exits.
 
 Note this “Save” in steps “a” and “b” does not imply saving to file – it implies updating an existing note object in the Main Activity’s note list or adding a new note to the Main Activity’s note list.
@@ -39,7 +44,7 @@ Selecting Ok should close the dialog and EditActivity without saving
 
 Selecting Cancel should close the dialog and remain in the EditActivity.
 
-The activity background should be set to a color other than white (the same color used in the Main Activity). The title and text fields should be a lighter version of that same color (the same color used in the Main Activity).
+![Screenshot 2021-12-18 094504.png](https://github.com/angmadera/images/blob/main/Screenshot%202021-12-18%20094504.png?raw=true)
 
 ## About Activity
 The About Activity contains a full-screen image background.
@@ -48,3 +53,5 @@ Over the background image, key information on the application is clearly display
 (1.0).
 
 There is no functionality present on this activity. The only action a user can take is to press the Back arrow to exit the activity.
+
+![Screenshot 2021-12-18 094410.png](https://github.com/angmadera/images/blob/main/Screenshot%202021-12-18%20094410.png?raw=true)
